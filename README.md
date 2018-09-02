@@ -10,7 +10,7 @@ Current implementation will simple generate null's, empty and non-empty inputs f
 To use simply create a test method which has the same arguments (and types) as the method to be 
 "input tested". Then mark your methods as a TestInputs method, for example
 
-``csharp
+```csharp
 [TestInputs]
 public void Mean(double[] values)
 {
