@@ -11,25 +11,30 @@ namespace Tests.PutridParrot.NUnit
     // or empty arrays
     [ExcludeFromCodeCoverage]
     [TestFixture]
-    public class StatisticsTests
+    public class TestInputsTests
     {
         [TestInputs]
         public void Mean(double[] values)
         {
+            // this should fail with a null sequence
+            // this should fail with an empty sequence
             Statistics.Mean(values);
         }
 
         [TestInputs]
         public void Median(double[] values)
         {
+            // this should fail with a null sequence
+            // this should fail with an empty sequence
             Statistics.Median(values);
         }
 
         [TestInputs]
         public void Mode(double[] values)
         {
+            // this should fail with a null sequence
+            // this should fail with an empty sequence
             Statistics.Mode(values);
         }
     }
-
 }

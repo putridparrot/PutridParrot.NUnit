@@ -49,7 +49,7 @@
   <ItemGroup>
     <Compile Include="Statistics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StatisticsTests.cs" />
+    <Compile Include="TestInputsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PutridParrot.NUnit\PutridParrot.NUnit.csproj">
