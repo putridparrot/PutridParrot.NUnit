@@ -1,4 +1,4 @@
-# PutridParrot.Nunit
+# PutridParrot.NUnit
 
 NUnit extensions, includes the TestInputsAttribute class which will generate "edge" test cases 
 for different method parameters.
