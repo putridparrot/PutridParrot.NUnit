@@ -1,5 +1,7 @@
 # PutridParrot.NUnit
 
+![.NET Core](https://github.com/putridparrot/PutridParrot.NUnit/workflows/.NET%20Core/badge.svg)
+
 NUnit extensions, includes the TestInputsAttribute class which will generate "edge" test cases 
 for different method parameters.
 
