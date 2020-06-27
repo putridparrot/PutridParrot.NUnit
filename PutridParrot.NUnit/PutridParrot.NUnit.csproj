@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net472</TargetFrameworks>
     <AssemblyTitle>PutridParrot.NUnit</AssemblyTitle>
     <Product>PutridParrot.NUnit</Product>
     <Copyright>Copyright ©  2018</Copyright>
@@ -13,11 +13,6 @@
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.10.1" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Net.Http" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
   </ItemGroup>
 </Project>

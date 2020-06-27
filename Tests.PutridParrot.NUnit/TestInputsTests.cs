@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using NUnit.Framework;
 using PutridParrot.NUnit;
 
@@ -18,7 +19,23 @@ namespace Tests.PutridParrot.NUnit
         {
             // this should fail with a null sequence
             // this should fail with an empty sequence
-            Statistics.Mean(values);
+            try
+            {
+                Statistics.Mean(values);
+            }
+            catch (InvalidOperationException)
+            {
+                Assert.True(true);
+            }
+            catch (ArgumentNullException)
+            {
+                Assert.True(true);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                Assert.True(false);
+            }
         }
 
         [TestInputs]
@@ -26,7 +43,27 @@ namespace Tests.PutridParrot.NUnit
         {
             // this should fail with a null sequence
             // this should fail with an empty sequence
-            Statistics.Median(values);
+            try
+            {
+                Statistics.Median(values);
+            }
+            catch (InvalidOperationException)
+            {
+                Assert.True(true);
+            }
+            catch (ArgumentNullException)
+            {
+                Assert.True(true);
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Assert.True(true);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                Assert.True(false);
+            }
         }
 
         [TestInputs]
@@ -34,7 +71,23 @@ namespace Tests.PutridParrot.NUnit
         {
             // this should fail with a null sequence
             // this should fail with an empty sequence
-            Statistics.Mode(values);
+            try
+            {
+                Statistics.Mode(values);
+            }
+            catch (InvalidOperationException)
+            {
+                Assert.True(true);
+            }
+            catch (ArgumentNullException)
+            {
+                Assert.True(true);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                Assert.True(false);
+            }
         }
     }
 }

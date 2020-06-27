@@ -26,9 +26,8 @@ namespace PutridParrot.NUnit
             // creates a lookup of "known" edge cases 
             // for types
             var edges = new Dictionary<Type, object[]>();
-            for (var i = 0; i < parameters.Length; i++)
+            foreach (var type in parameters)
             {
-                var type = parameters[i];
                 if (!edges.ContainsKey(type))
                 {
                     edges.Add(type, GenerateValues(type));
